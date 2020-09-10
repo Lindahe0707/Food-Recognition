@@ -1,4 +1,4 @@
-# Food-recognition
+# Food Recognition Using Convolutional Neural Network for Estimating Carbon Footprint
 
 The increase of greenhouse gases (GHG) has led to the climate change and the global warm. Carbon dioxide is the primary GHG emitted through human activities such as consumption of food, transportation, burning fuels and other services. The concept of low-carbon society is thus proposed as an environmental protection measure. One source of carbon emission is the agriculture and food, especially meat consumption. GHG emissions in meat-eaters are approximately twice as high as those in vegans. Nowadays, many people follow the “camera eats first” phenomenon, where people take photos of their meals before eating. One of the potential approaches to reduce GHG is to build a mobile application that captures the food pictures and analyzes the meat information automatically to inform users the carbon footprint from their daily meat consumption. 
 
