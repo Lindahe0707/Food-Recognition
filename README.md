@@ -12,6 +12,8 @@ In the project, new dataset of cooked meat image was collected and used for the 
 
 Data augmentation is introduced to generate more data according to the existing ones by a series of processes such as rotation and flipping. Here is an example.
 
+![DataAugmentation](data_augmentation.png)
+
 - CNN model
 
 I built a simple CNN model with 4 hidden layers including 3 convolutional-pooling layers and a fully connected layer except for the input layer and the output layer.
@@ -24,25 +26,35 @@ Firstly, the pre-trained model Xception was loaded with the top layer removed an
 
 The GHG produced per kilogram of each food include all emissions from both the production stage (at farm gate) and consumption stage (post farm gate). 
 
+![FoodCarbon](Food_carbon.png)
 
 
 ## Experiments
 
 - Dataset description
 
-Raw images were scraped from Google Image by the keyword “cooked AND meat name” for 6 categories
+Raw images were scraped from Google Image by the keyword “cooked AND meat name” for 6 categories.
 
 - Model comparison
 
 All the best performances of each fine-tuned model were achieved within 30 epochs.
 
+![Models](Model_compare.png)
+
+
 - Mode Evaluation 
 
 The precision and recall of one category are affected by other categories in a multi-classification problem. From the system’s perspective, the categorical accuracy in the model training in Keras is actually the recall metric as the number of true positives are divided by the actual number of images in one meat category; in practice, users concern more about the precision metric as they upload a bunch of images to see how many predicted results are correct. Thus it is necessary to analyze both the precision and recall metrics.
 
+![Evaluation](Precision_recall_categories.png)
+
+
 - Carbon footprint estimation
 
 When users upload a picture, the system first recognizes the image and decides the category of meat. Carbon emission is then calculated as shown in the table. The weight in the table is a default value and users can adjust it manually in a practical application.
+
+![Estimation](Food_carbon_estimation.png)
+
 
 ## Conclusion
 
